@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" href="./assets/icon/logo.png" />
+    <title>Assassin's Creed</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigator">
+          <li class="navigator-item">
+            <img src="./assets/icon/logo.png" alt="Logo Assassin's Creed" />
+          </li>
+          <li class="navigator-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navigator-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="navigator-item">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="navigator-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="about" class="about">
+        <h1 class="about__title">Assassin's Creed</h1>
+        <img
+          class="about__image"
+          src="./assets/images/ezio2.jpg"
+          alt="Foto de 3 ezio joven, adulto y viejo"
+        />
+        <ul class="about__list">
+          <li>
+            <p>Real name: Ezio Auditore</p>
+          </li>
+          <li>
+            <p>Location: Florence</p>
+          </li>
+          <li>
+            <a href="https://github.com/trathpai">GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:ezio@auditore.com">ezio@auditore.com</a>
+          </li>
+        </ul>
+      </div>
+      <div id="gallery" class="carousel">
+        <div class="carousel-inner">
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden
+            checked="checked"
+          />
+          <div class="carousel-item">
+            <img src="./assets/images/ezio-carousel1.jpg" />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden
+          />
+          <div class="carousel-item">
+            <img src="./assets/images/ezio-carousel2.jpg" />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden
+          />
+          <div class="carousel-item">
+            <img src="./assets/images/ezio-carousel3.jpg" />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-4"
+            name="carousel"
+            aria-hidden="true"
+            hidden
+          />
+          <div class="carousel-item">
+            <img src="./assets/images/ezio-carousel4.jpg" />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-5"
+            name="carousel"
+            aria-hidden="true"
+            hidden
+          />
+          <div class="carousel-item">
+            <img src="./assets/images/ezio-carousel5.jpg" />
+          </div>
+
+          <label for="carousel-1" class="carousel-control next control-2"
+            >‹</label
+          >
+          <label for="carousel-1" class="carousel-control prev control-5"
+            >›</label
+          >
+          <label for="carousel-2" class="carousel-control next control-3"
+            >‹</label
+          >
+          <label for="carousel-2" class="carousel-control prev control-1"
+            >›</label
+          >
+          <label for="carousel-3" class="carousel-control next control-4"
+            >‹</label
+          >
+          <label for="carousel-3" class="carousel-control prev control-2"
+            >›</label
+          >
+          <label for="carousel-4" class="carousel-control next control-5"
+            >‹</label
+          >
+          <label for="carousel-4" class="carousel-control prev control-3"
+            >›</label
+          >
+          <label for="carousel-5" class="carousel-control next control-1"
+            >‹</label
+          >
+          <label for="carousel-5" class="carousel-control prev control-4"
+            >›</label
+          >
+
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-4" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-5" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <iframe
+          class="contact__video"
+          src="https://www.youtube.com/embed/z-r2AhqxBzw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="contact__description">
+          <p>
+            En el año 873 d.c., la guerra y el hacinamiento llevaron a Eivor a
+            liderar a su clan de vikingos para que abandonaran Noruega. Se
+            instalan en la Inglaterra medieval como parte de la expansión
+            vikinga en toda Europa. Esto los pone en conflicto con los reinos
+            anglosajones de Wessex Northumbria, Estanglia y Mercia. El clan de
+            Eivor enfrentará fuerzas lideradas por los líderes de estos reinos,
+            incluido Alfredo el Grande, el rey de Wessex.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>COPYRIGHT ASSASSIN'S CREED</p>
+    </footer>
+  </body>
+</html>

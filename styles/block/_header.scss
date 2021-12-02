@@ -1,0 +1,31 @@
+nav{
+    background-color: $whitePrimaryColor;
+
+    .navigator{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70px;
+
+        .navigator-item{
+            padding:9px;
+
+            img{
+                width: 40px;
+            }
+            a{
+                text-decoration: none;
+                color: $blackPrimaryColor;
+                text-transform: uppercase;
+                font-family: "Gemunu Libre", sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                &:hover{
+                    font-size: 30px;
+                    -webkit-transition: width 0.2s;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
