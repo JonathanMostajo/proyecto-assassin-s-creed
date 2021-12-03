@@ -1,19 +1,43 @@
 .carousel {
-    border: solid 2px red;
+    
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin: 50px 5%;
     width: 90%;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    @include borderRadius();
 }
 
 .carousel-inner {
     position: relative;
     overflow: hidden;
+    height: 200px;
     width: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    @include borderRadius();
+    
+    @include tablet{
+        height: 250px;
+    }
+    
+    @include desktop{
+        height: 300px;
+    }
+    
+    .carousel-item img {
+        display: flex;
+        height: 200px;
+        width: 100%;
+
+        @include tablet{
+            height: 250px;
+        }
+
+        @include desktop{
+            height: 300px;
+        }
+    /* display: block;
+    height: auto;
+    max-width: 100%; */
+}
 }
 
 .carousel-open:checked + .carousel-item {
@@ -28,11 +52,7 @@
     transition: opacity 0.6s ease-out;
 }
 
-.carousel-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
+
 
 .carousel-control {
     background: rgba(0, 0, 0, 0.28);
@@ -108,5 +128,5 @@
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
-    color: #428bca;
+    color: $whitePrimaryColor;
 }

@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,900);
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;700&display=swap");
 nav {
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(47, 79, 79, 0.75);
 }
 
 nav .navigator {
@@ -61,7 +61,7 @@ nav .navigator .navigator-item a:hover {
   text-transform: uppercase;
   padding: 20px;
   font-size: 36px;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(47, 79, 79, 0.75);
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -76,10 +76,10 @@ nav .navigator .navigator-item a:hover {
 
 .about .about__image {
   width: 80%;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 @media only screen and (min-width: 426px) {
@@ -106,7 +106,7 @@ nav .navigator .navigator-item a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin: 26px;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(47, 79, 79, 0.75);
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -136,7 +136,7 @@ nav .navigator .navigator-item a:hover {
   font-family: "Gemunu Libre", sans-serif;
   font-weight: bold;
   text-decoration: none;
-  color: #023e7d;
+  color: black;
 }
 
 .about .about__list li a:hover {
@@ -149,7 +149,6 @@ nav .navigator .navigator-item a:hover {
 }
 
 .carousel {
-  border: solid 2px red;
   position: relative;
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
           box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -162,9 +161,45 @@ nav .navigator .navigator-item a:hover {
 .carousel-inner {
   position: relative;
   overflow: hidden;
+  height: 200px;
   width: 100%;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+@media only screen and (min-width: 426px) {
+  .carousel-inner {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel-inner {
+    height: 300px;
+  }
+}
+
+.carousel-inner .carousel-item img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  /* display: block;
+    height: auto;
+    max-width: 100%; */
+}
+
+@media only screen and (min-width: 426px) {
+  .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel-inner .carousel-item img {
+    height: 300px;
+  }
 }
 
 .carousel-open:checked + .carousel-item {
@@ -177,12 +212,6 @@ nav .navigator .navigator-item a:hover {
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
-}
-
-.carousel-item img {
-  display: block;
-  height: auto;
-  max-width: 100%;
 }
 
 .carousel-control {
@@ -258,7 +287,7 @@ nav .navigator .navigator-item a:hover {
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
-  color: #428bca;
+  color: white;
 }
 
 .contact {
@@ -273,24 +302,21 @@ nav .navigator .navigator-item a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px;
+  height: 600px;
 }
 
 .contact .contact__video {
-  border: solid 2px red;
   margin: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   width: 95%;
-  height: 250px;
-  /* @include desktop{
-        height: 500px;
-    } */
+  height: 70%;
 }
 
 .contact .contact__description {
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(47, 79, 79, 0.75);
   -webkit-box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
   padding: 40px;
@@ -315,7 +341,7 @@ footer {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 40px;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(47, 79, 79, 0.75);
 }
 
 footer p {

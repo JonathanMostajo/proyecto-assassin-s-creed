@@ -9,9 +9,8 @@
     text-transform: uppercase;
     padding: 20px;
     font-size: 36px;
-    background-color: $whitePrimaryColor;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    background-color: $bluePrimaryColor;
+    @include borderRadius();
 
     &::before {
       content: "-";
@@ -24,9 +23,8 @@
 
   .about__image {
     width: 80%;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+    @include borderRadius();
 
     @include tablet {
       width: 35%;
@@ -42,9 +40,8 @@
       flex-direction: column;
       align-items: center;
       margin: 26px;
-      background-color: $whitePrimaryColor;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+      background-color: $bluePrimaryColor;
+      @include borderRadius();
 
       li{
           padding: 8px;
@@ -70,7 +67,7 @@
             font-family: "Gemunu Libre", sans-serif;
             font-weight: bold;
             text-decoration: none;
-            color: $bluePrimaryColor;
+            color: $blackPrimaryColor;
 
             &:hover {
                 color: red;

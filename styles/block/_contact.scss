@@ -3,22 +3,18 @@
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  height: 600px;
 
   .contact__video {
-    border: solid 2px red;
     margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    @include borderRadius();
     width: 95%;
-    height: 250px;
-    /* @include desktop{
-        height: 500px;
-    } */
+    height: 70%;
   }
 
   .contact__description {
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: $bluePrimaryColor;
     box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
     padding: 40px;
     margin-left: 5px;
