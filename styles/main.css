@@ -287,7 +287,7 @@ nav .navigator .navigator-item a:hover {
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
-  color: white;
+  color: rgba(47, 79, 79, 0.75);
 }
 
 .contact {
